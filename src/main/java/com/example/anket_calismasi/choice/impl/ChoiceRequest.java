@@ -9,12 +9,11 @@ import lombok.Data;
 public class ChoiceRequest {
     private String value;
     private String title;
-    private ChoiceDto choice;
+
     public ChoiceDto toDto(){
         return ChoiceDto.builder()
                 .value(value)
                 .title(title)
-                .choice(choice)
                 .build();
     }
 }

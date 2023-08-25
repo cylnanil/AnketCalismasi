@@ -34,7 +34,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public void delete(String id){
         repository.delete(repository.findById(Integer.parseInt(id)))
-                .orElseThrow(() ->(new EntityNotFoundException("User not found"));
+                .orElseThrow(() ->(new EntityNotFoundException("User not found")));
     }
 
     @Override

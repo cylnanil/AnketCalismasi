@@ -1,5 +1,7 @@
 package com.example.anket_calismasi.choice.api;
 
+import com.example.anket_calismasi.question.api.QuestionDto;
+import com.example.anket_calismasi.question.impl.Question;
 import lombok.Builder;
 import lombok.Data;
 
@@ -9,5 +11,5 @@ public class ChoiceDto {
     private int id;
     private String value;
     private String title;
-    private ChoiceDto choice;
+    private QuestionDto questionDto;
 }

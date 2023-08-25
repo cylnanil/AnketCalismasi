@@ -34,7 +34,7 @@ public class ChoiceController {
     }
 
     @PostMapping("/{id}/choices/{choiceId}")
-    public ChoiceResponse addChoiceToSurvey(@PathVariable(name = "id") String id, @PathVariable(name = "choiceId") String surveyId) {
+    public ChoiceResponse addChoiceToSurvey(@PathVariable(name = "id") String id, @PathVariable(name = "choiceId") String choiceId) {
         return ChoiceResponse.fromDto(service.addChoiceToSurvey(id, choiceId));
     }
 }
