@@ -27,6 +27,6 @@ public class SurveyResponse {
                         .username(surveyDtoDto.getUserDto().getUsername())
                         .email(surveyDtoDto.getUserDto().getEmail())
                         .password(surveyDtoDto.getUserDto().getPassword())
-                        .build();
+                        .build());
     }
 }

@@ -1,0 +1,17 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: anket_calismasi
+
+  main:
+    allow-circular-references: true
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/anket_calismasi?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: yeni_sifre7784
+    driverClassName: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
